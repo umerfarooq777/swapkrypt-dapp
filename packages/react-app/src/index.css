@@ -24,19 +24,19 @@ input[type="number"] {
   );
 }
 
-.pink_gradient {
+.red_gradient {
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: -5rem;
+  left: -5rem;
   width: 123px;
   height: 123px;
   border-radius: 50%;
 
-  background: #fb37ff;
-  filter: blur(200px);
+  background: #dd1318;
+  filter: blur(100px);
 }
 
-.blue_gradient {
+.green_gradient {
   position: absolute;
   bottom: 0%;
   right: 0%;
@@ -44,16 +44,26 @@ input[type="number"] {
   height: 123px;
   border-radius: 50%;
 
-  background: #18b2de;
-  filter: blur(200px);
+  background: #008a45;
+  filter: blur(100px);
 }
 
 .gradient-border {
   background: linear-gradient(
     168.82deg,
-    #fb37ff 1.7%,
+    #dd1318 1.7%,
     rgba(155, 111, 238, 0) 27.12%,
     rgba(123, 127, 234, 0) 61.28%,
-    #1bb2de 99.52%
+    #008a45 99.52%
   );
+}
+
+.kryptBg {
+  background-image: url(./assets/kryptBg.jfif);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
 }

@@ -1,13 +1,13 @@
 const styles = {
   // App.js
-  container: "flex justify-center min-h-screen sm:px-16 px-6 bg-site-black",
+  container: "flex justify-center min-h-screen sm:px-16 px-6 bg-neutral-100",
   innerContainer:
     "flex justify-between items-center flex-col max-w-[1280px] w-full",
-  header: "flex flex-row justify-between items-center w-full sm:py-10 py-6",
+  header: "flex flex-row justify-between items-center w-full sm:py-1 py-6",
   exchangeContainer:
-    "flex-1 flex justify-start items-center flex-col w-full mt-10",
-  headTitle: "text-white font-poppins font-black text-5xl tracking-wide",
-  subTitle: "text-dim-white font-poppins font-medium mt-3 text-base",
+    "flex-1 flex justify-start items-center flex-col w-full mt-0",
+  headTitle: "text-gray-900 font-poppins font-black text-6xl tracking-wide",
+  subTitle: "text-gray-900 font-poppins font-black mt-3 text-base",
   exchangeBoxWrapper: "mt-10 w-full flex justify-center",
   exchangeBox:
     "relative md:max-w-[700px] md:min-w-[500px] min-w-full max-w-full gradient-border p-[2px] rounded-3xl",
