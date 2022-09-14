@@ -33,13 +33,15 @@ const styles = {
 
   // WalletButton
   walletButton:
-    "bg-site-pink border-none outline-none px-6 py-2 font-poppins font-bold text-lg text-white rounded-3xl leading-[24px] hover:bg-pink-600 transition-all",
+    "bg-rose-700 border-none outline-none px-6 py-2 font-poppins font-bold text-lg text-white rounded-3xl leading-[24px] hover:bg-rose-600 transition-all",
+    walletButtonConnected:
+    "bg-green-700 border-none outline-none px-6 py-2 font-poppins font-bold text-lg text-white rounded-3xl leading-[24px] hover:bg-green-600 transition-all",
 
   // loader
-  loader: "flex justify-center items-center flex-col w-full min-h-full",
-  loaderImg: "w-56 h-56 object-contain",
+  loader: "flex justify-center items-center flex-col w-full h-full",
+  loaderImg: "w-20 h-56 object-contain",
   loaderText:
-    "font-poppins font-normal text-dim-white text-lg text-center mt-10",
+    "font-poppins font-normal text-dim-white text-lg text-center mt-0",
 
   // balance
   balance: "w-full text-left mt-2 ml-2",

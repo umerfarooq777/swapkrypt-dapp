@@ -33,7 +33,7 @@ input[type="number"] {
   border-radius: 50%;
 
   background: #dd1318;
-  filter: blur(100px);
+  filter: blur(80px);
 }
 
 .green_gradient {
@@ -45,7 +45,7 @@ input[type="number"] {
   border-radius: 50%;
 
   background: #008a45;
-  filter: blur(100px);
+  filter: blur(90px);
 }
 
 .gradient-border {

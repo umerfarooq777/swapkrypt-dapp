@@ -1,8 +1,16 @@
 import React from 'react'
+import styles  from '../styles'
+import { ethereumLogo } from '../assets'
 
-const Loader = () => {
+const Loader = ({title}) => {
   return (
-    <div>Loader</div>
+    <div className={styles.loader}>
+        <img
+        src={ethereumLogo}
+        alt="Ethereum Logo"
+        className={styles.loaderImg}/>
+        <p className={styles.loaderText}>{title}</p>
+    </div>
   )
 }
 
