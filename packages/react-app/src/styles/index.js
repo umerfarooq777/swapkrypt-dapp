@@ -10,13 +10,13 @@ const styles = {
   subTitle: "text-gray-900 font-poppins font-black mt-3 text-base",
   exchangeBoxWrapper: "mt-10 w-full flex justify-center",
   exchangeBox:
-    "relative md:max-w-[700px] md:min-w-[500px] min-w-full max-w-full gradient-border p-[2px] rounded-3xl",
+    "relative md:max-w-[900px] md:min-w-[700px] min-w-full max-w-full gradient-border p-[2px] rounded-3xl",
   exchange:
-    "w-full min-h-[400px] bg-site-black backdrop-blur-[4px] rounded-3xl shadow-card flex p-10",
+    "md:min-w-[600px] min-h-[400px] bg-site-black backdrop-blur-[4px] rounded-3xl shadow-card flex p-10",
 
   // AmountIn & AmountOut
   amountContainer:
-    "flex justify-between items-center flex-row w-full min-w-full bg-site-dim border-[1px] border-transparent hover:border-site-dim2 min-h-[96px] sm:p-8 p-4 rounded-[20px]",
+    "flex justify-between items-center flex-row w-full min-w-full bg-site-dim border-[1px] border-white hover:border-site-dim2 min-h-[96px] sm:p-8 p-4 rounded-[15px]",
   amountInput:
     "w-full flex-1 bg-transparent outline-none font-poppins font-black text-2xl text-white",
   currencyButton:

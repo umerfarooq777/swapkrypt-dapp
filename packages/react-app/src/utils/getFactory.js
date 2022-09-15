@@ -14,8 +14,7 @@ export const getFactory=async(factoryAddress,web3)=>{
     }
 
     for (let i= 0; i < factoryInfo.allPairs.Length; i++) {
-        factoryInfo.allPairs[i] = await factory.methods.allPairs(i).
-        call();
+        factoryInfo.allPairs[i] = await factory.methods.allPairs(i).call();
         }
 
 
