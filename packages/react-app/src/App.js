@@ -3,12 +3,15 @@ import {useEthers} from '@usedapp/core';
 import styles from './styles';
 import {swapkryptLogo} from './assets';
 import {Loader,Exchange,WalletButton} from "./components"
+import { usePools } from "./hooks";
 
 
 const App = () => {
 
 const {account} = useEthers();
-const poolsLoading = false;
+
+const [loading,pools]= usePools();
+
 
 
 
@@ -41,10 +44,10 @@ const poolsLoading = false;
                       {
                         account?
                         (
-                          poolsLoading?(
+                          loading?(
                             <Loader title="Loading pools, Please wait..."/>
                           ):
-                            <Exchange/>
+                            <Exchange pools={pools}/>
                           
                         ):<Loader title="Please connect your wallet !"/> 
                       }

@@ -1,3 +1,9 @@
+export {getFactory} from './getFactory'
+export {getPairs} from './getPairs'
+export {getRouter} from './getRouter'
+
+
+
 export { 
   getAvailableTokens,
   getCounterpartTokens,

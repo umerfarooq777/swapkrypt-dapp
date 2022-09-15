@@ -1,1 +1,2 @@
-import {usePools} from './usePools';
+export {usePools} from './usePools';
+

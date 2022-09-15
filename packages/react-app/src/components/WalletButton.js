@@ -27,22 +27,42 @@ useEffect(()=>{
 
 
 
-  return (
-    <button onClick={()=>{
-      if (!account) {
-        activateBrowserWallet();
-        
-      }else{
+  return (<>
+
+    {accountAddress?(
+      <button onClick={()=>{
+      if (window.confirm('Dissconnect Wallet?')) {
+        // activateBrowserWallet();
         deactivate();
+        
+        alert('Wallet disconnected successfully...')
+        
       }
     }}
-    className={accountAddress?styles.walletButtonConnected:styles.walletButton}
+    className={styles.walletButtonConnected}
     >
       {/* {accountAddress?`Disconnect wallet`:"Click to connect wallet"} */}
-      {accountAddress||"Click to connect wallet"}
+      {accountAddress}
 
       {/* {rendered !== "" && rendered} */}
     </button>
+    ):(
+    <button onClick={()=>{
+      activateBrowserWallet();
+      alert('Wallet connected successfully...')
+    }}
+    className={styles.walletButton}
+    >
+      {/* {accountAddress?`Disconnect wallet`:"Click to connect wallet"} */}
+      Click to connect wallet
+
+      {/* {rendered !== "" && rendered} */}
+    </button>
+    )}
+    
+
+
+    </>
   )
 }
 
